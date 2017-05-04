@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_video_guide"
+        android:layout_width="130dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/installagion_guide_video_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/capture_one" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/relativeLayout_video_guide">
+
+        <TextView
+            android:id="@+id/installagion_guide_video_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="Mounting The radio"
+            android:textColor="@color/alignment_canvasBackground"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Edit"
+        android:textColor="@color/hardBlack"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView21"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:textSize="10dp" />
+
+    <EditText
+        android:id="@+id/editDialog_editText_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="1dp"
+        android:hint="Name"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/editDialog_editText_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView23"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="1dp"
+        android:hint="Phone"
+        android:inputType="number"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editDialog_editText_Name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Phone"
+        android:textSize="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/alignment_canvasShading_light"
+        android:layout_below="@+id/editDialog_editText_Phone"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Save"
+            android:id="@+id/settingsDialog_button_save"
+            android:textColor="@color/white"
+            android:background="@drawable/red_rounded_button_background"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Cancel"
+            android:id="@+id/settingsDialog_button_cancel"
+            android:textColor="@color/half_black"
+            android:background="@color/transparent"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/settingsDialog_button_save"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="7dp"
+    android:paddingTop="7dp">
+
+    <View
+        android:id="@+id/viewFrame"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/white_shadow" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutListItem"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/secondaryAlignementColor">
+
+        <com.hookedonplay.decoviewlib.DecoView
+            android:id="@+id/projects_list_circleDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/circle_presentage_project_selection"
+            android:text="0%"
+            android:textSize="17dp"
+            android:textColor="@color/highlightAlignementColor"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/projects_list_circleDialog_projectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/relativeLayoutListItem"
+        android:paddingTop="10dp"
+        android:text="Tel Aviv, north"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/projects_list_circleDialog_projectDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/projects_list_circleDialog_projectName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toEndOf="@+id/relativeLayoutListItem"
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#a3a3a3"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/place_holder"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:id="@+id/projects_list_listSize_PositionLeft_image"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignBaseline="@+id/viewFrame"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_toEndOf="@+id/relativeLayoutListItem"
+        android:src="@drawable/dashboard_complet_empty"
+         />
+
+
+    <TextView
+        android:id="@+id/projects_list_listSize_PositionLeft"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignBaseline="@+id/viewFrame"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_toEndOf="@+id/projects_list_listSize_PositionLeft_image"
+        android:gravity="center"
+        android:text="54"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/hardBlack"
+        android:textSize="11dp" />
+
+    <ImageView
+        android:id="@+id/projects_list_listSize_complete_image"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignBottom="@+id/projects_list_listSize_PositionLeft"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/projects_list_listSize_PositionLeft"
+        android:src="@drawable/dashboard_completed_icon"
+         />
+
+
+    <TextView
+        android:id="@+id/projects_list_listSize_complete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@+id/projects_list_listSize_PositionLeft"
+        android:layout_toRightOf="@+id/projects_list_listSize_complete_image"
+        android:gravity="center"
+        android:text="50"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="11dp" />
+
+
+    <ImageView
+        android:id="@+id/projects_list_listSize_inComplete_image"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignBottom="@+id/projects_list_listSize_PositionLeft"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/projects_list_listSize_complete"
+        android:src="@drawable/dashboard_inprograss_icon"
+         />
+
+
+    <TextView
+        android:id="@+id/projects_list_listSize_inComplete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@+id/projects_list_listSize_PositionLeft"
+        android:layout_toEndOf="@+id/projects_list_listSize_inComplete_image"
+        android:gravity="center"
+        android:text="101"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/hardBlack"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/projects_list_dateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="120dp"
+        android:gravity="right"
+        android:paddingRight="20dp"
+        android:text="1d"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#bcbcbc"
+        android:textSize="14dp"
+
+        android:layout_alignBottom="@+id/projects_list_listSize_PositionLeft"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

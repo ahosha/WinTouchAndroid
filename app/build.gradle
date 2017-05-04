@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "apps.radwin.wintouch"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 856
+        versionName "1.1.02"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/core.jar')
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.google.android.gms:play-services:10.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.0.1'
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.1'
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.google.android.gms:play-services-location:10.0.1'
+    compile 'com.github.lzyzsd:circleprogress:1.1.0@aar'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile 'com.github.blackfizz:eazegraph:1.2.5l@aar'
+    compile 'com.github.bmarrdev:android-DecoView-charting:v1.2'
+    compile 'com.github.ViksaaSkool:AwesomeSplash:v1.0.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    compile 'com.google.android.gms:play-services-analytics:10.0.1'
+    compile 'com.android.support:multidex:1.0.0'
+}
+
+
+apply plugin: 'com.google.gms.google-services'
+
+
+
+

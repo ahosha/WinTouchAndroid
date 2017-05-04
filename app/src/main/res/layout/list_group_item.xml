@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="30dp"
+        android:id="@+id/leftLayout"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_lens_black_24dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/group_count_header"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="2"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/leftLayout"
+        >
+
+        <TextView
+            android:id="@+id/lblListHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="TEXT"
+            android:textColor="@color/alignment_canvasShading"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/mghText"
+            android:layout_toEndOf="@+id/lblListHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/lblListHeader"
+            android:layout_marginLeft="5dp"
+            android:text="MHz"
+            android:textColor="@color/alignment_canvasShading"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

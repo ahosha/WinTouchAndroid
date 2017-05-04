@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigate_id"
+        android:icon="@drawable/ic_near_me_black_24dp"
+        android:title="Delete items"
+
+        />
+
+    <item
+        android:id="@+id/edit_id"
+        android:icon="@drawable/ic_create_black_24dp"
+        android:title="Exporting item"
+
+        />
+
+
+    <item
+        android:id="@+id/delete_id"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:title="Delete items"
+
+        />
+
+
+</menu>

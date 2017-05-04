@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="apps.radwin.wintouch.activities.alignmentActivities.ScanningBarcodeManualInputActivity"
+    tools:showIn="@layout/app_bar_scanning__barcode__manual__input_">
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textContainer"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="16"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/scanning_barcode_manual_barcodeNumber_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="16"
+            android:hint="@string/manual_bacode_scan_text_hint"
+            android:inputType="textUri"
+            android:maxLength="16" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/barcodescan"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/imageView23"
+        android:layout_below="@+id/textContainer"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/manual_bacode_scan_secondary_text"
+        android:textSize="@dimen/manual_bacode_scan_secondary_text_size"
+        android:gravity="center"
+        android:id="@+id/textView24"
+        android:layout_below="@+id/imageView23"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="SAVE"
+        android:id="@+id/scanning_barcode_manual_barcodeNumber_saveButton"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/textView22"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textView24"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:background="@color/alignment_canvasShading_light"
+        >
+    </View>
+
+
+</RelativeLayout>

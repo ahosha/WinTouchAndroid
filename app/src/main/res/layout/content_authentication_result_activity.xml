@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdfdff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="apps.radwin.wintouch.activities.userActivities.AuthenticationResultScreen"
+    tools:showIn="@layout/app_bar_authentication_result_screen">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/HeadlineText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Authentication"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HeadlineText"
+            android:layout_centerHorizontal="true"
+            android:textStyle="normal"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:id="@+id/secondaryHeadlineText"
+            android:gravity="center"
+            android:text="@string/please_input_the_pin_code_recieved_in_the_sms_message_sent_to_050_880_4277"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/middleLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/secondaryHeadlineText"
+            android:layout_height="wrap_content">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textFielfAreaCodeContainer"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextPincodeOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Pin Code"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/seperatorLineLayout"
+            android:layout_below="@+id/middleLayout"
+            android:layout_marginStart="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/half_black"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="2dp">
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/explenationText"
+            android:layout_below="@+id/middleLayout"
+            android:text="Input a 6 key Code"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/explenationText"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="re-send Sms"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_height="wrap_content" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

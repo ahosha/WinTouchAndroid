@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/upper_restartDialog_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/restart_required"
+            android:id="@+id/dialog_restart_headline"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/device_band_needs_to_be_changed_nrestart_is_required_to_continue_ninstallation"
+            android:id="@+id/dialog_restart_content"
+            android:textSize="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignStart="@+id/dialog_restart_headline"
+            android:layout_below="@+id/dialog_restart_headline"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/relativeLayout_Reset_dialog_buttom"
+        android:layout_below="@+id/upper_restartDialog_layout">
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/arc_progressRestartDialog"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:donut_text_color="@color/white"
+            app:donut_background_color="@color/alignment_canvasBackground"
+            app:donut_finished_color="@color/alignment_noSync"
+            app:donut_unfinished_color="@color/transparent"
+            app:donut_finished_stroke_width="7dp"
+            app:donut_unfinished_stroke_width="7dp"
+            app:donut_progress="25"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+
+        <View
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle_shape_no_outline"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_restart_seconds_text"
+            android:text="1:54"
+            android:textSize="40dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_restart_seconds_text_headline"
+            android:text="@string/sec"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/dialog_restart_seconds_text"
+            android:layout_marginTop="35dp"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restart"
+        android:textSize="17dp"
+        android:textAllCaps="true"
+        android:background="@color/transparent"
+        android:id="@+id/restart_dialog_restartButton"
+        android:textColor="@color/fabBuuttonAlignementColor"
+        android:layout_below="@+id/relativeLayout_Reset_dialog_buttom"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textSize="17dp"
+        android:textAllCaps="true"
+        android:background="@color/transparent"
+        android:id="@+id/restart_dialog_CancelButton"
+        android:textColor="@color/secondaryAlignementColor"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/restart_dialog_restartButton"
+        android:layout_marginLeft="70dp"
+        android:textStyle="bold"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to work orders"
+        android:textSize="17dp"
+        android:textAllCaps="true"
+        android:background="@color/transparent"
+        android:id="@+id/restart_dialog_backButton"
+        android:textColor="@color/secondaryAlignementColor"
+        android:layout_below="@+id/restart_dialog_CancelButton"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

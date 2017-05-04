@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context="apps.radwin.wintouch.fragments.alignmentFragments.IstallationGuideFragmentVideoGudies">
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/projectSelectionSwipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/intallataion_guide"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/installationGuides_ckecklists_upperlayout"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/installationGuides_checklist_image"
+                    android:background="@drawable/backgound_image_new_project_flipped"
+                    />
+
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center|left"
+                    android:text="Inventory &amp; Tool Checklist"
+                    android:id="@+id/installationGuides_checklist_headline"
+                    android:textColor="@color/alignementWhite"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/installationGuides_checklist_description"
+                android:text="Prepare the following tools and items"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="17dp"
+                android:layout_below="@+id/installationGuides_ckecklists_upperlayout"
+
+                />
+            <ListView
+                android:id="@+id/installationGuides_checklist_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/installationGuides_checklist_description"
+                android:longClickable="true"
+                />
+
+        </RelativeLayout>
+
+        <!-- TODO: Update blank fragment layout -->
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

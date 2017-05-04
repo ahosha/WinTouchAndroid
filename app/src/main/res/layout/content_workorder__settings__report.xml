@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="apps.radwin.wintouch.activities.alignmentActivities.ReportActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    tools:showIn="@layout/app_bar_workorder__settings__report"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:background="@color/secondaryAlignementColor"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/truuput_down"
+                android:layout_marginTop="35dp"
+                android:id="@+id/downlinkPicture"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.5 Mbps"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:id="@+id/report_result_tput_down"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/downlinkPicture"
+                android:layout_alignStart="@+id/downlinkPicture"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="126.1 Mbps"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:id="@+id/report_result_tput_up"
+                android:layout_marginLeft="40dp"
+                android:layout_toEndOf="@+id/report_result_tput_down"
+                android:layout_alignTop="@+id/report_result_tput_down"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/truuput_up"
+                android:id="@+id/upLinkPicture"
+                android:layout_above="@+id/report_result_tput_up"
+                android:layout_alignStart="@+id/report_result_tput_up"
+                android:layout_marginBottom="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.5 Mbps required"
+                android:textSize="15dp"
+                android:textColor="@color/alignment_canvasOutline"
+                android:id="@+id/report_required_tput_up"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/report_result_tput_down"
+                android:layout_alignStart="@+id/report_result_tput_down"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9999 Mbps required"
+                android:textSize="15dp"
+                android:textColor="@color/alignment_canvasOutline"
+                android:id="@+id/report_required_tput_down"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/report_result_tput_up"
+                android:layout_alignStart="@+id/report_result_tput_up"
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_check_circle_black_24dp"
+                android:id="@+id/report_passed_pic"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/report_required_tput_up"
+                android:layout_alignStart="@+id/report_required_tput_up"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:id="@+id/report_passed_status_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/report_passed_pic"
+                android:layout_alignTop="@+id/report_passed_pic"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="July 12, 2016 12:45"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:id="@+id/report_passed_date_text"
+                android:layout_below="@+id/report_passed_status_text"
+                android:layout_alignStart="@+id/report_passed_status_text"
+                />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:id="@+id/reportScreen_buttom_layout"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Band"
+                android:textSize="15dp"
+                android:textColor="@color/alignment_canvasOutline"
+                android:id="@+id/report_abilable_bandwidth"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="45dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frequency"
+                android:textSize="15dp"
+                android:textColor="@color/alignment_canvasOutline"
+                android:id="@+id/report_frequency_mhz"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/report_bandwidth_text"
+                android:layout_alignStart="@+id/report_bandwidth_text"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0000 MHz"
+                android:textSize="18dp"
+                android:id="@+id/report_frequency_text"
+                android:textColor="@color/hardBlack"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/report_frequency_mhz"
+                android:layout_alignStart="@+id/report_frequency_mhz"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Channel bandwidth"
+                android:textSize="15dp"
+                android:textColor="@color/alignment_canvasOutline"
+                android:id="@+id/report_channel_bandwidth"
+                android:layout_marginLeft="120dp"
+                android:layout_toRightOf="@+id/report_abilable_bandwidth"
+                android:layout_alignTop="@+id/report_abilable_bandwidth"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 MHz"
+                android:textSize="18dp"
+                android:id="@+id/report_chanel_bandwidth_text"
+                android:textColor="@color/hardBlack"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/report_channel_bandwidth"
+                android:layout_alignStart="@+id/report_channel_bandwidth"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service type"
+                android:textSize="15dp"
+                android:textColor="@color/alignment_canvasOutline"
+                android:id="@+id/report_service_type"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/report_chanel_bandwidth_text"
+                android:layout_alignStart="@+id/report_chanel_bandwidth_text"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best effort"
+                android:textSize="18dp"
+                android:id="@+id/report_service_type_text"
+                android:textColor="@color/hardBlack"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/report_service_type"
+                android:layout_alignStart="@+id/report_service_type"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yossi Levi"
+                android:textSize="18dp"
+                android:id="@+id/report_name_text"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/hardBlack"
+                android:layout_below="@+id/report_frequency_text"
+                android:layout_alignStart="@+id/report_frequency_text"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="052-880-4277"
+                android:textSize="18dp"
+                android:id="@+id/report_phone_text"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/hardBlack"
+                android:layout_below="@+id/report_name_text"
+                android:layout_alignStart="@+id/report_name_text"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_call_black_24dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/report_phone_icon"
+                android:layout_toLeftOf="@+id/report_phone_text"
+                android:layout_alignTop="@+id/report_phone_text"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_perm_identity_black_24dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/report_name_text"
+                android:layout_alignTop="@+id/report_name_text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.0 GHz FCC/IC"
+                android:textSize="18dp"
+                android:id="@+id/report_bandwidth_text"
+                android:textColor="@color/hardBlack"
+                android:layout_alignBaseline="@+id/report_chanel_bandwidth_text"
+                android:layout_alignBottom="@+id/report_chanel_bandwidth_text"
+                android:layout_alignStart="@+id/report_abilable_bandwidth" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:id="@+id/reportScreen_buttom_pictures_layout"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/image_Text_one"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/image_Text_two"
+                />
+
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/image_Text_one_image"
+                android:src="@drawable/ic_aspect_ratio_black_24dp"
+                android:layout_below="@+id/image_Text_one"
+                android:layout_alignStart="@+id/image_Text_one"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_aspect_ratio_black_24dp"
+                android:id="@+id/image_Text_Two_image"
+                android:layout_below="@+id/image_Text_two"
+                android:layout_alignStart="@+id/image_Text_two"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/image_Text_one_image"
+                android:id="@+id/image_Text_three"
+                />
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/image_Text_Three_image"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_aspect_ratio_black_24dp"
+                android:layout_below="@+id/image_Text_three"
+                android:layout_marginBottom="20dp"
+                android:layout_alignStart="@+id/image_Text_three"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+</ScrollView>

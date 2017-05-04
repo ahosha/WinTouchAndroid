@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- /////////////////////////////////////////// -->
+    <!-- <a> wintouch Application Color Schemes </a> -->
+    <!-- /////////////////////////////////////////// -->
+    <color name="mainAlignementColor">#f24336</color>
+    <color name="mainAlignementColorDark">#c04336</color>
+    <color name="secondaryAlignementColor">#293339</color>
+    <color name="highlightAlignementColor">#64e1bb</color>
+    <color name="incompletWorkordersAlignementColor">#f79b25</color>
+    <color name="fabBuuttonAlignementColor">#05a9f5</color>
+    <color name="alignementColorRed">#eb5161</color>
+    <color name="alignementWhite">#ffffff</color>
+
+
+    <color name="mainAlignementColorVeryDark">#8f362d</color>
+
+    <!-- /////////////////////////////////////////// -->
+    <!-- <a> /// WIDGET FOR ALIGNMENT COLORS ///</a> -->
+    <!-- /////////////////////////////////////////// -->
+    <color name="alignment_canvasBackground">#263034</color>
+    <color name="alignment_canvasOutline">#7d92a3</color>
+    <color name="alignment_canvasHbs">#39b8f5</color>
+    <color name="alignment_canvasScanned">#ffffff</color>
+    <color name="alignment_noSync">#ff0033</color>
+
+    <color name="alignment_canvasShading">#3c4a50</color>
+
+    <color name="alignment_canvasShading_light">#d6d8da</color>
+
+
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#f24336</color> <!-- <a> change this for pallet </a> -->
+
+    <color name="transparent">#00000000</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#ffffff</color> <!-- <a> change this for pallet </a> -->
+
+    <color name="color_white_semitransparent">#80ededed</color>
+
+    <color name="hardBlack">#000000</color>
+    <color name="black">#80000000</color>
+
+    <color name="grey_dashboard_notInUse">#7E94A2</color>
+
+    <color name="add_new_project_hint_color">#f4ab9d</color>
+
+    <color name="alignment_needle_color">#d8403b</color>
+
+    <color name="tabListDarkColor">#a42218</color>
+
+    <color name="colorIndicateorSwitchGrey">#7e7e7e</color>
+
+
+    <color name="text_shadow">#c0000000</color>
+
+
+</resources>

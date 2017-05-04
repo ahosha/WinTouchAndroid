@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#eeeeee"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingTop="0dp">
+
+    <ImageView
+        android:id="@+id/grad_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:visibility="gone"
+        android:background="@drawable/grad_back"/>
+
+    <ImageView
+        android:id="@+id/workoderSelectionListImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/workorder_selection_planned" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nearest_site"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:id="@+id/workorderListNearestSite"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/workoderSelectionListWorkorderDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/workoderSelectionListImageView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="10dp"
+        android:text="0.5 km"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="1"
+        android:textColor="#9c9c9c"
+        android:textSize="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1d"
+        android:textSize="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#bcbcbc"
+        android:textStyle="bold"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowRadius="1"
+        android:paddingBottom="10dp"
+        android:id="@+id/workorderSelectionListDateText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:id="@+id/workorderNextArrow"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_chevron_right_black_24dp"
+        />
+
+    <TextView
+        android:id="@+id/workoderSelectionListWorkorderName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Workorder Name"
+        android:layout_marginRight="80dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18dp"
+        android:layout_below="@+id/workorderListNearestSite"
+        android:layout_alignStart="@+id/workorderListNearestSite" />
+
+    <View
+        android:id="@+id/trasnparentBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white_semitransparent"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_empty_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="apps.radwin.wintouch.activities.alignmentActivities.EmptyDashboardActivity"
+    tools:showIn="@layout/app_bar_empty_dashboard">
+
+    <TextView
+        android:id="@+id/dashboardHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/dashboard_noprojects_headline"
+        android:textColor="@color/mainAlignementColor"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/dashboardSubHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dashboardHeadline"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@+id/dashboardHeadline"
+        android:text="@string/dashboard_noprojects_sub_headline"
+        android:textColor="@color/hardBlack"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/image_ulc"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/dashboardSubHeadline"
+        android:src="@drawable/dashboard_image_empty" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/image_ulc"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="250dp"
+            android:id="@+id/createProjectButton"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="NEW PROJECT"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:background="@color/fabBuuttonAlignementColor"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

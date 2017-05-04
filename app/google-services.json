@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "799294378462",
+    "project_id": "wintouch-149920"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799294378462:android:eb3c2d87668910e7",
+        "android_client_info": {
+          "package_name": "apps.radwin.wintouch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVIxWdQ5034Qy3xetd2CUFb_cxnqFJeCA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-90403849-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

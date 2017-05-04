@@ -1,0 +1,276 @@
+<resources>
+    <string name="app_name">WINTouch</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="close">Close</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="action_realign">Realign</string>
+
+    <string name="title_activity_fine__aligment_">SU Alignment</string>
+    <string name="title_activity_add__new__project_"></string>
+    <string name="title_activity_add__new__work__order">Create work order</string>
+    <string name="title_activity_edit__new__work__order">Edit work order</string>
+    <string name="title_activity_edit__new__project_">Edit Project</string>
+
+    <!-- Menu -->
+
+    <!-- popupMenues -->
+
+    <!-- DIALOG LINES -->
+
+    <!-- TOAST messages -->
+    <string name="addNewProject_missing_band_and_bandwidth">Could not read device frequencies</string>
+    <string name="addNewProject_missing_project_name">You need to fill a Project Name</string>
+    <string name="addNewProject_same_project_name">Name already exists, please rename and try again</string>
+    <string name="addNewProject_networkId_iliigal">The Network Id Must Be 4 Characters or none</string>
+    <string name="addNewProject_same_project_updated">Project updated successfully</string>
+    <string name="work_order_updated_successfully">Work order updated successfully</string>
+    <string name="addNewProject_missing_sucessful_exeeded_maximum_bands">Maximum 10 frequencies</string>
+    <string name="loadingAddress">Address should be acquired first</string>
+    <string name="Menu_pressed_settings">Settings is not supported yet</string>
+    <string name="title_activity_testings_">Link Evaluation</string>
+    <string name="title_activity_workorder__settings__report">Report</string>
+    <string name="no_hbs_alignment_toast">No HBS found - cannot continue</string>
+
+
+    <!-- ADD NEW PROJECTS SCREEN -->
+    <string name="done">Done</string>
+    <string name="addNewProject_required_trueput">Required throughput (Mbps)</string>
+    <string name="addNewProject_Toast_noUpAndDownData">Throughput must be set</string>
+    <string name="addNewProject_Toast_invalid_email">E-mail is not valid</string>
+    <string name="addNewProject_layout_description">Description</string>
+    <string name="addNewProject_layout_networkId">Network ID</string>
+    <string name="addNewProject_layout_serviceType">Service Type</string>
+    <string name="addNewProject_toast_deleteSussful">Project deleted successfully</string>
+    <string name="addNewProject_toast_deleteUnSussful">Could not delete the project</string>
+    <string name="addNewProject_toast_connectedSuccessfully">Connected to device successfully"</string>
+    <string name="addNewWO_toast_deleteSussful">Work order deleted successfully</string>
+    <string name="addNewWO_toast_deleteUnSussful">Could not delete the Work Order</string>
+
+
+    <string-array name="addNewProject_layout_serviceType_list">
+        <item>Best effort</item>
+        <item>CIR</item>
+    </string-array>
+
+
+    <string-array name="su_pro_checklist_names">
+        <item>WINTouch is installed on device</item>
+        <item>Radio with mounting kit</item>
+        <item>2 Lightning Protection Units (LPUs)</item>
+        <item>PoE (if outdoor, needs a mounting kit)</item>
+        <item>CAT-5e cables (x4), cable ties (or cable drum and crimping tools)</item>
+        <item>Grounding cables (for radio, each LPU, and outdoor PoE)</item>
+        <item>Spanner wrench (13mm/½\")</item>
+        <item>Waterproofing tape (like Scotch 23)</item>
+    </string-array>
+
+    <string-array name="su_pro_movie_names">
+        <item>Mounting and aligning the radio unit</item>
+        <item>Aligning the radio</item>
+        <item>Locking the radio</item>
+    </string-array>
+
+    <string-array name="su_pro_movie_descriptions">
+        <item>Press on the movie to activate the link</item>
+        <item>Press on the movie to activate the link</item>
+        <item>Press on the movie to activate the link</item>
+    </string-array>
+
+
+    <string name="title_activity_workorder_set_settings">Work order settings</string>
+
+
+    <!-- Workorder Settings Screen -->
+    <string name="workorderSettings_layout_buttonText">Select Frequencies</string>
+    <string name="workorderSettings_layout_bandSpinner_headline">Work Order Band</string>
+    <string name="title_activity_horizontal__placement__screen_">Horizontal Placement</string>
+
+    <!-- Horizontal Dialog Screen -->
+    <string name="horizontal_screen_dialog_layout_main_text">Align SU horizontally</string>
+    <string name="title_activity_scanning__barcode__activity__with__fragment">QR Code</string>
+    <string name="title_activity_scanning__barcode__manual__input_">Manually Barcode</string>
+    <string name="dialog_mainText_before_alignment">Please wait</string>
+    <string name="dialog_header_before_alignment">Calibration</string>
+
+    <!-- Manual Barcode Scan -->
+    <string name="manual_bacode_scan_text_hint">QR Code</string>
+    <string name="manual_bacode_enter_sn">Enter serial number</string>
+    <string name="manual_bacode_scan_secondary_text">S/N location</string>
+    <string name="title_activity_connect__to__wif_i">Wi-Fi Connection</string>
+
+    <string name="dashboard_noprojects_headline">Welcome to WINTouch</string>
+    <string name="dashboard_noprojects_sub_headline">\n </string>
+
+    <!-- Connect To Wifi Activity -->
+    <string name="connect_to_wifi_acitivity_mainText_initlize">Wait while application connects to radio’s Wi-Fi</string>
+    <string name="connect_to_wifi_acitivity_mainText_connectingToWifi">Trying to connect to the device \nPlease Wait</string>
+    <string name="connect_to_wifi_acitivity_mainText_turnOnWifi">Install radio on site, then connect power to the radio.</string>
+    <string name="connect_to_wifi_layout_mainMessage">Scan radio QR code</string>
+
+    <string name="connect_to_wifi_layout_buttonText">Open Wi-Fi connections</string>\
+
+
+    <!-- Connect To Wifi Activity -->
+    <string name="connect_to_wifi_cannot_get_bands">Could not get device bands</string>
+    <string name="connect_set_bands">Could not set device band</string>
+    <string name="connect_set_data">Error saving data to device</string>
+    <string name="title_activity_pending_reset__alignement_">Reseting Device</string>
+    <string name="title_activity_project_selection_main_fragment">Projects</string>
+
+
+    <!-- Connect To Wifi Activity -->
+
+    <!-- Alignment Activity -->
+    <string name="alignment_main_headline"></string>
+    <string name="alignment_secondary_headline">Rotate radio to find best HBS. \n Also rotate with slight upwards / downwards tilt.</string>
+
+    <string name="alignment_secondary_headline_best_found">Move SU to the colored area</string>
+
+    <!-- Fine Alignment Activity -->
+    <string name="fine_alignment_main_headline"> </string>
+    <string name="fine_alignment_secondary_headline">Rotate SU to lock onto the best RSS location</string>
+    <string name="fine_alignment_dialog_main">Please lock the antenna</string>
+
+    <!-- wrong password popup -->
+    <string name="dialog_userAuth_headline">Change password</string>
+    <string name="dialog_userAuth_body">Wrong device password</string>
+    <string name="dialog_userAuth_positive">Change password</string>
+    <string name="dialog_userAuth_negetive">Back</string>
+
+    <!-- connection fail popup -->
+    <string name="dialog_connectionFail_headline">Error</string>
+    <string name="dialog_connectionFail_body">Connection Fail</string>
+    <string name="dialog_connectionFail_negetive">Back</string>
+
+
+    <!-- reAlignment -->
+    <string name="dialog_reAlign_headline">Warning</string>
+    <string name="dialog_reAlign_body">Alignment information will be lost</string>
+    <string name="dialog_reAlign_negetive">Back</string>
+    <string name="dialog_reAlign_positive">Continue</string>
+
+
+    <!-- fine Aluigment Sinc Dialog -->
+
+    <!-- fine Aluigment Sinc Dialog -->
+    <string name="noLink_error_fineAlignment">• No Link, Cannot continue</string>
+    <string name="noLink_default_fineAlignment">• Waiting for link</string>
+
+    <string name="title_activity_dashboard_activity">Dashboard</string>
+
+    <string name="title_activity_installationGuide_activity">Installation Guides</string>
+
+    <string name="title_activity_empty_dashboard_activity">Dashboard</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_workorders_selection">Work Orders</string>
+
+
+    <string name="title_activity_alignment_main">SU Alignment</string>
+
+    <string name="title_workordersetsettings_set_error">Error</string>
+    <string name="set_error_workordersetsettings">Configuration update failed</string>
+    <string name="set_error_button_workordersetsettings">Back to projects screen</string>
+
+    <string name="missing_workorder_name">Customer name is required</string>
+
+    <string name="dashboard_default_adress_field">No address</string>
+    <string name="dashboard_default_date_field">just now</string>
+    <string name="dashboard_default_name_field">New work order</string>
+
+    <string name="alignmentErrorCursorLocation">Cannot get the device cursor location</string>
+    <string name="alignmentErrorBack">Back</string>
+    <string name="alignmentErrorTitle">Communication Error</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_video_guides">Video Guide Screen</string>
+
+    <string name="settings_wrong_unit_password_message">Invalid unit password\nChange password and try again</string>
+    <string name="settings_wrong_wifi_password_message">Invalid Wi-Fi password\nChange password and try again</string>
+    <string name="settings_password_approved_message">Passwords Saved</string>
+
+    <string name="main_about_content">Warning:\nThis application is protected by copyright law and international treaties.\nUnauthorized reproduction or distribution of this application, or any portion of it, may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law.</string>
+    <string name="about_desc">
+        The RADWIN WINTouch app is an innovative and easy-to-use tool to simplify the installation and management of RADWIN Subscriber Units.\n\n
+WINTouch enables the automatic selection of the best available Base Station, optimal antenna alignment and link quality verification.\n\n
+Making the antenna alignment process so easy that no prior skill-set is required, WINTouch guarantees rapid alignment and commissioning, secures the best connection and optimizes service performance at every site installation.\n\n
+WINTouch assists the field technician by improving daily task management - overseeing installation assignments and prioritizing scheduled tasks based on installation site proximity.\n\n
+In addition, installation status and deployment analysis reports are automatically generated for quick and easy distribution to colleagues and peers.\n\n
+WINTouch also provides access to training sessions, product documentation and update notifications.\n\n
+When using the WINTouch app with your RADWIN wireless broadband solution, you will be surprised by how simple and quick the installation process becomes and how it will boost your operational efficiency!\n\n
+
+
+
+    </string>
+
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
+
+
+    <string name="authentication_headline">Authentication</string>
+    <string name="authentication_result_headline">Authentication Result</string>
+
+    <string name="project_selection_edit_title">Edit</string>
+    <string name="project_selection_edit_message">Edit Project Settings</string>
+    <string name="workorder_selection_edit_title">Edit</string>
+    <string name="workorder_selection_edit_message">Edit work order settings</string>
+    <string name="ulc_statement_title">Communication Error</string>
+    <string name="ulc_statement_message">The device has encountered an error.\nThe alignment process should be restarted.</string>
+    <string name="description">Description</string>
+    <string name="down">Downlink</string>
+    <string name="project_name">Project Name</string>
+    <string name="service_type">Service Type</string>
+    <string name="up">Uplink</string>
+    <string name="available_sectors">Available Sectors</string>
+
+    <string name="sec">SEC.</string>
+    <string name="restart">RESTART</string>
+    <string name="cancel">CANCEL</string>
+    <string name="restart_required">Restart Required</string>
+    <string name="device_band_needs_to_be_changed_nrestart_is_required_to_continue_ninstallation">Device band needs to be changed.\nRestart is required to continue \ninstallation.</string>
+    <string name="restarting_device_workorder_settings">Restarting device please wait  </string>
+    <string name="reset_dialog_connecting_to_device">Connecting to device:</string>
+    <string name="restart_dialog_connect_now">Connect now</string>
+    <string name="reconnectDialogBody">"Connecting to device"</string>
+    <string name="workorder_selection_confirm">Warning</string>
+    <string name="workorder_selection_confirm_message">Work order status will change to In Progress</string>
+    <string name="nearest_site">Nearest Site</string>
+    <string name="return_to_workorders_dialog">Return to workorders</string>
+    <string name="linkLostAligmentScreen">Connectivity Lost Waiting for Data</string>
+    <string name="linkeLostToastAligmentScreen">Connectivity Lost - Cannot continue</string>
+    <string name="caompatibilityText">Your device might not contain the latest version \nPlease upgrade it</string>
+    <string name="main_text_wifi_connection_error">Could not connect</string>
+    <string name="connectToWifi_Sscreen_try_again_buttonText">Try Again</string>
+    <string name="wifi_connection_toast_wifi">Device is not connected to correct network \nPlease check network SSID</string>
+    <string name="mainual_ssid_barcode_langth_error">Serial length must be exactly 16 characters</string>
+    <string name="mainual_ssid_barcode_charechters_error">SSID must contain A-Z, 0-9 characters</string>
+    <string name="ulc_linkstate_error_dialog">The SU cannot be re-aligned, as it is under service</string>
+    <string name="ulc_hsuId_error_dialog">This SU is registered and will be de-registered for re-alignment - would you like to procced?</string>
+    <string name="installation_guide_videos_description">1. Mount the Subscriber Unit on a pole or wall, using the supplied mounting kit.\n\n2. Ground the Subscriber Unit.\n\n3. Connect one end of the CAT5e cable to the Subscriber Unit via a Lightning Protection Unit (LPU).\n\n4. Connect the other end of the CAT5e cable to a PoE via a second LPU.\n\n5. Connect power and Ethernet cable to the PoE; the Subscriber Unit is now powered on.</string>
+    <string name="installation_guide_antena_alignment_description">1. Run WINTouch application installed on your smartphone\n\n2. Choose the Projects pull-down menu\n\n3. Choose the project on which you are working or create a new one\n\n4. Choose work order or create a new one\n\n5. Press the START ALIGNMENT button and follow the WINTouch instructions</string>
+    <string name="installationguide_video_headline">Subscriber Unit Physical Installation</string>
+
+    <string name="wintouch_will_send_an_sms_message_to_verify_your_phone_number_n_enter_your_name_counry_code_and_phone_number">Wintouch will send an SMS message to verify your phone number. \n Enter your name, Counry code and Phone number:</string>
+    <string name="email">Email</string>
+    <string name="picutres_error_text">Please attach at least one picture to the report</string>
+    <string name="cannotusephonetext">cannot use phone ?</string>
+    <string name="please_input_the_pin_code_recieved_in_the_sms_message_sent_to_050_880_4277">Please input the Pin Code Recieved in the SMS message sent to: 050-880-4277</string>
+    <string name="WifiPopupMain">To complete alignment, turn off the Smart network switch option, found in the Wi-Fi settings.</string>
+    <string name="WifiPopupHeadline">Warning</string>
+    <string name="WifiPopupNegative">Cancel Alignment</string>
+    <string name="WifiPopupPositive">Continue</string>
+
+
+</resources>

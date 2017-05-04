@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context="apps.radwin.wintouch.fragments.alignmentFragments.IstallationGuideFragmentVideoGudies">
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/projectSelectionSwipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/intallataion_guide"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/installationGuides_videoguides_upperlayout"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/installationGuides_videoguides_image"
+                    android:background="@drawable/backgound_image_new_project_flipped"
+                    />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="80dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center|left"
+                    android:text="@string/installationguide_video_headline"
+                    android:id="@+id/installationGuides_videoguides_headline"
+                    android:textColor="@color/alignementWhite"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    />
+            </RelativeLayout>
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/installationGuides_videoGuides_description"-->
+                <!--android:text="@string/installationGuide_video_description"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:textSize="17sp"-->
+                <!--android:layout_below="@+id/installationGuides_videoguides_upperlayout"-->
+
+                <!--/>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/installationGuides_videoGuides_description_secondary"
+                android:text="@string/installation_guide_videos_description"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:textSize="14dp"
+                android:layout_below="@+id/installationGuides_videoguides_upperlayout"
+
+                />
+
+            <!--<ListView-->
+                <!--android:id="@+id/installationGuides_videoguides_list"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="20sp"-->
+                <!--android:layout_marginRight="20sp"-->
+                <!--android:layout_below="@+id/installationGuides_videoGuides_description_secondary"-->
+                <!--android:longClickable="true"-->
+                <!--/>-->
+
+            <VideoView
+                android:layout_width="match_parent"
+                android:id="@+id/installation_guide_videoView"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/installationGuides_videoGuides_description_secondary"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <!-- TODO: Update blank fragment layout -->
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="apps.radwin.wintouch.activities.alignmentActivities.DashboardActivity">
+
+
+
+    <include layout="@layout/content_installation_guide" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

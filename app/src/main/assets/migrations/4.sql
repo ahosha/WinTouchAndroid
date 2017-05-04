@@ -1,0 +1,3 @@
+ALTER TABLE WorkingOrders ADD COLUMN ImageOne TEXT;
+ALTER TABLE WorkingOrders ADD COLUMN ImageTwo TEXT;
+ALTER TABLE WorkingOrders ADD COLUMN ImageThree TEXT;

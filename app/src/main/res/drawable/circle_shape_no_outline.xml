@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <!-- CONTENT LAYER -->
+            <item>
+                <shape android:shape="oval">
+                    <!-- transparent stroke = larger_circle_size - smaller_circle_size -->
+                    <solid android:color="@color/alignment_canvasBackground" />
+                    <size android:width="40dp" android:height="40dp" />
+
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

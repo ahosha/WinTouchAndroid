@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="3dp"
+    android:paddingTop="3dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/red_check_mark"
+        android:id="@+id/checkmarks_list_left_Image"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_toEndOf="@+id/checkmarks_list_left_Image"
+        android:layout_marginLeft="15dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/installationGuide_checklist_main_text"
+            android:layout_height="40dp"
+            android:text="WINTOUCH IS INSTALLED ON DEVICE"
+            android:textColor="@color/alignment_canvasBackground"
+            android:layout_marginRight="20sp"
+            android:gravity="center|left|center_horizontal|center_vertical"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

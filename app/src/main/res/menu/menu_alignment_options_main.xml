@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/menu_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/projects"
+            android:icon="@drawable/menu_projects"
+            android:title="Projects" />
+        <item
+            android:enabled="false"
+            android:id="@+id/news"
+            android:icon="@drawable/menu_news"
+            android:title="News" />
+        <item
+            android:enabled="false"
+            android:id="@+id/support"
+            android:icon="@drawable/menu_support"
+            android:title="Support" />
+        <item
+            android:enabled="false"
+            android:id="@+id/tutorials"
+            android:icon="@drawable/menu_tutorials"
+            android:title="Tutorials" />
+        <item
+            android:enabled="true"
+            android:id="@+id/installationGuide"
+            android:icon="@drawable/menu_news"
+            android:title="Installation Guides" />
+
+        <item
+            android:id="@+id/about_section"
+            android:icon="@drawable/ic_assignment_late_black_24dp"
+            android:title="About" />
+    </group>
+
+    <item android:title="">
+
+        <menu>
+            <!--<item-->
+zzzzzzzzzz        </menu>
+    </item>
+
+</menu>
